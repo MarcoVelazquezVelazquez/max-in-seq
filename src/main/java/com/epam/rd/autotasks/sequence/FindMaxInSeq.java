@@ -8,7 +8,7 @@ public class FindMaxInSeq {
 
         Scanner input = new Scanner(System.in);
 
-        int maxNumber = 0;
+        int max = 0;
 
         while (true){
             int number = input.nextInt();
@@ -18,14 +18,14 @@ public class FindMaxInSeq {
             }
 
             for (int i = 1; i <= number; i++){
-                if (number > maxNumber){
-                    maxNumber = number;
+                if (number > max){
+                    max = number;
                 }
             }
         }
 
 
-        return maxNumber;
+        return max;
     }
 
     public static void main(String[] args) {
