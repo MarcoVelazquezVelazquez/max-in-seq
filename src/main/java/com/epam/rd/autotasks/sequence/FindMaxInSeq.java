@@ -19,7 +19,7 @@ public class FindMaxInSeq {
             for (int i = 1; i <= number; i++) {
                 if (number > max) {
                     max = number;
-                }break;
+                }
             }
         }
 
