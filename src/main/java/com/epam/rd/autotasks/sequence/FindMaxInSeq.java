@@ -6,12 +6,32 @@ public class FindMaxInSeq {
 
         // Put your code here
 
-        return 0;
+        Scanner input = new Scanner(System.in);
+
+        int maxNumber = 0;
+
+        while (true){
+            int number = input.nextInt();
+
+            if (number == 0){
+                break;
+            }
+
+            for (int i = 1; i <= number; i++){
+                if (number > maxNumber){
+                    maxNumber = number;
+                }
+            }
+        }
+
+
+        return maxNumber;
     }
 
     public static void main(String[] args) {
 
         System.out.println("Test your code here!\n");
+
 
         // Get a result of your code
 
